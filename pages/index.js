@@ -143,12 +143,14 @@ export default function Home() {
                             <a
                               href="https://github.com/Leon2192/Firechat-ProyectoFinalReactNative-Arrieta-Leonardo"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
                             </a>
                             <a
                               href="https://expo.dev/@leonardoarrieta/firechat?serviceType=classic&distribution=expo-go"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
                             </a>
@@ -181,12 +183,14 @@ export default function Home() {
                             <a
                               href="https://github.com/Leon2192/El-Recreo-logo"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
                             </a>
                             <a
                               href="https://el-recreologo.netlify.app/"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
                             </a>
@@ -216,12 +220,14 @@ export default function Home() {
                             <a
                               href="https://github.com/Leon2192/ProyectoFinalReact-Arrieta-Leonardo-Manuel"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
                             </a>
                             <a
                               href="https://fakestoreapi-tienda-online.netlify.app/"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
                             </a>
@@ -255,12 +261,14 @@ export default function Home() {
                             <a
                               href="https://github.com/Leon2192/Buscador-Imagenes-Api"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
                             </a>
                             <a
                               href="https://fakeunsplash.netlify.app/"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
                             </a>
@@ -293,12 +301,14 @@ export default function Home() {
                             <a
                               href="https://github.com/Leon2192/ReactCinema"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
                             </a>
                             <a
                               href="https://reactcinema-app.netlify.app/"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
                             </a>
@@ -327,12 +337,14 @@ export default function Home() {
                             <a
                               href="https://github.com/Leon2192/CardJS-HTML-Css-Scss-PokeApi"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
                             </a>
                             <a
                               href="https://pokeapi-card-html-css-scss.netlify.app/"
                               target="_blank"
+                              rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
                             </a>

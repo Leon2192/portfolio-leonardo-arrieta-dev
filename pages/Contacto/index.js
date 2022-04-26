@@ -28,16 +28,25 @@ const Contacto = () => {
             <div className="divider"></div>
             <div className="container-contact">
               <div className="contact-links">
-                <a href="https://github.com/Leon2192" target="_blank">
+                <a
+                  href="https://github.com/Leon2192"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaGithubSquare size="60" color="#000000" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/leonardo-manuel-arrieta/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <FaLinkedin size="60" color="#0e76a8" />
                 </a>
-                <a href="https://wa.me/541127682286" target="_blank">
+                <a
+                  href="https://wa.me/541127682286"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <FaWhatsapp size="60" color=" #00bb2d" />
                 </a>
               </div>
