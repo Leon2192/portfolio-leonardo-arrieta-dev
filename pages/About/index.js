@@ -15,6 +15,7 @@ const About = ({ user }) => {
                 <a
                   href={user.html_url}
                   target="_blank"
+                  rel="noreferrer"
                   className="btn btn-outline-secondary my-2"
                 >
                   Ir a Github
