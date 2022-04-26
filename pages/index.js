@@ -5,7 +5,7 @@ import { skills } from "../profile";
 
 import { FaCode } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa";
-//import Image from "next/image";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -17,11 +17,11 @@ export default function Home() {
               <div className="card card-body bg-secondary text-light">
                 <div className="row">
                   <div className="col-md-4">
-                    <img
-                      src="profile.jpeg"
+                    <Image
+                      src="/profile.jpeg"
                       alt=""
-                      width="200px"
-                      height="100px"
+                      width={275}
+                      height={200}
                       className="img-fluid"
                     />
                   </div>
@@ -135,7 +135,13 @@ export default function Home() {
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <div className="overflow">
-                        <img src="/fire.png" alt="" className="card-img-top" />
+                        <Image
+                          src="/fire.png"
+                          alt=""
+                          width={400}
+                          height={400}
+                          className="card-img-top"
+                        />
                       </div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">Firechat</h3>
@@ -169,8 +175,10 @@ export default function Home() {
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <div className="overflow">
-                        <img
+                        <Image
                           src="/recreologo.jpg"
+                          width={400}
+                          height={400}
                           alt=""
                           className="card-img-top"
                         />
@@ -209,7 +217,13 @@ export default function Home() {
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <div className="overflow">
-                        <img src="/store.png" alt="" className="card-img-top" />
+                        <Image
+                          src="/store.png"
+                          alt=""
+                          width={400}
+                          height={400}
+                          className="card-img-top"
+                        />
                       </div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
@@ -246,8 +260,10 @@ export default function Home() {
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <div className="overflow">
-                        <img
+                        <Image
                           src="/unsplash.png"
+                          width={400}
+                          height={400}
                           alt=""
                           className="card-img-top"
                         />
@@ -287,8 +303,10 @@ export default function Home() {
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <div className="overflow">
-                        <img
+                        <Image
                           src="/cinema.jpg"
+                          width={400}
+                          height={400}
                           alt=""
                           className="card-img-top"
                         />
@@ -327,7 +345,13 @@ export default function Home() {
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <div className="overflow">
-                        <img src="/poke.png" alt="" className="card-img-top" />
+                        <Image
+                          src="/poke.png"
+                          alt=""
+                          width={400}
+                          height={400}
+                          className="card-img-top"
+                        />
                       </div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
