@@ -230,7 +230,6 @@ export default function Home() {
                           Fake Store Api
                         </h3>
                         <p className="text-center">
-                          {" "}
                           Se trata de una tienda online, desarrollada con HTML,
                           CSS, Javascript y React JS. Utiliza hooks, como
                           dependencias React Router Dom, firebase y comunicación
