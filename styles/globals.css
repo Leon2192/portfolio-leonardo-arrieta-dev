@@ -1,16 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.overflow{
+  height: 50%;
+  overflow: hidden;
+}
+
+.overflow .card-img-top{
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover{
+  transform: scale(1.8);
+  background-color:#77dd77;
+  opacity: 0.7;
+}
+#nprogress .bar{
+background: #ff5367 !important;
+}
+
+#nprogress .spinner-icon{
+  border-top-color: #ffbb00;
+  border-left-color:#ffbb00;
+}
+
+.container-contact{
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.container-contact img{
+  width: 750px;
+  height: 700px;
+  bottom: 0;
+}
+
+.contact-headings h1, h2{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 38px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.contact-headings h3{
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.contact-headings .divider{
+  width: 100vw;
+  margin-top: 8px;
+}
+
+.contact-links{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-links i{
+  font-size: 4em;
+  color: #2bc8c9;;
+}
+
+.contact-links i:hover{
+ color: #000000;
+ transition: all 0.5s ease-out;
+}
+
+.header{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.header  p {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.header a h3{
+  text-align: center;
+  font-weight: bold;
+}
+.header h1{
+  font-weight: bold;
+}
+.header h4{
+  font-weight: bold;
+}
+.header h5{
+  font-weight: bold;
+}
+.skills h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.skills h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.skills h5{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.skills h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.skills p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.portfolio h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.portfolio h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.portfolio p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.navBar a h1{
+  font-weight: bold;
+}
+
+.navBar a h4{
+  font-weight: bold;
+}
+
+.about a{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
