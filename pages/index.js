@@ -5,6 +5,7 @@ import { skills } from "../profile";
 
 import { FaCode } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa";
+//import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,7 +17,13 @@ export default function Home() {
               <div className="card card-body bg-secondary text-light">
                 <div className="row">
                   <div className="col-md-4">
-                    <img src="profile.jpeg" alt="" className="img-fluid" />
+                    <img
+                      src="profile.jpeg"
+                      alt=""
+                      width="200px"
+                      height="100px"
+                      className="img-fluid"
+                    />
                   </div>
                   <div className="col-md-8">
                     <h1 className="text-center text-dark">

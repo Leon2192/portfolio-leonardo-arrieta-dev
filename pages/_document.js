@@ -23,7 +23,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>My Portfolio</title>
+          
           <meta name="description" content="Leonardo Arrieta Portfolio" />
           <link
             rel="stylesheet"

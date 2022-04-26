@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Layout from "../../components/LayOut";
+import Image from "next/image";
 
 const About = ({ user }) => {
   return (
@@ -10,7 +11,7 @@ const About = ({ user }) => {
             <div className="col-md-4 offset-md-4">
               <div className="card card-body text-center">
                 <h1>{user.name}</h1>
-                <img src={user.avatar_url} alt="" />
+                <img  src={user.avatar_url} alt="" />
                 <p>{user.bio}</p>
                 <a
                   href={user.html_url}
