@@ -89,7 +89,7 @@ export default function Home() {
                       <h4>Coderhouse</h4>
                       <h5>Desarrollo de Apps - Curso</h5>
                       <h6>2022 - 2022</h6>
-                      <p>Desarrollo de apps con React Native & Expo CLI.</p>
+                      <p>Desarrollo de apps con React Native y Expo CLI.</p>
                     </li>
                     <li>
                       <h4>Coderhouse</h4>
