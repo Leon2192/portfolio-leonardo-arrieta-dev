@@ -2,16 +2,22 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import Layout from "../components/LayOut";
 import { skills } from "../profile";
+import { motion, useViewportScroll } from "framer-motion";
 
 import { FaCode } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Home() {
+  const { scrollYProgress } = useViewportScroll();
   return (
     <>
       <Layout>
-        <div className="header">
+        <motion.div
+          className="header"
+          animate={{ x: 25 }}
+          transition={{ delay: 1 }}
+        >
           <header className="row">
             <div className="col-md-12">
               <div className="card card-body bg-secondary text-light">
@@ -26,29 +32,81 @@ export default function Home() {
                     />
                   </div>
                   <div className="col-md-8">
-                    <h1 className="text-center text-dark">
-                      Front-End Developer
-                    </h1>
-                    <h5 className="text-center text-light">
-                      Soy una persona responsable, organizada, muy detallista y
-                      con buenas relaciones interpersonales. Llevo dos años
-                      formándome profesionalmente para insertarme en el área IT.
-                    </h5>
-                    <a
+                    <motion.div
+                      initial="hidden"
+                      animate="visible"
+                      variants={{
+                        hidden: {
+                          scale: 0.8,
+                          opacity: 0,
+                        },
+                        visible: {
+                          scale: 1,
+                          opacity: 1,
+                          transition: {
+                            delay: 0.4,
+                          },
+                        },
+                      }}
+                    >
+                      <motion.h1 className="text-center text-dark">
+                        Front-End Developer Jr
+                      </motion.h1>
+                    </motion.div>
+                    <motion.h5 className="text-center text-light">
+                      ¡HOLA! Gracias por ver mi portfolio. Mi nombre es
+                      Leonardo, soy una persona entusiasta, organizada, muy
+                      detallista y con facilidad para relacionarme con las
+                      personas. Me apasiona programar y mi objetivo es crecer
+                      profesionalmente para poder dedicarme a ello. Actualmente
+                      busco poner en práctica todos mis conocimientos y seguir
+                      aprendiendo cada día más para poder desempeñarme como
+                      Front-End Developer.
+                    </motion.h5>
+                    <motion.a
+                      whileHover={{ scale: 1.2 }}
+                      whileTap={{ scale: 0.8 }}
+                      style={{ x: 100 }}
                       rel="noreferrer"
                       target="_blank"
                       href="CV-LeonardoManuelArrieta.pdf"
                       className="text-center text-light"
                     >
-                      <h3 className="text-primary">Ver CV</h3>
-                    </a>
+                      <motion.h3
+                        className="text-primary"
+                        whileHover={{
+                          scale: 1.2,
+                          transition: { duration: 0.2 },
+                        }}
+                        whileTap={{ scale: 0.5 }}
+                      >
+                        Ver CV
+                      </motion.h3>
+                    </motion.a>
                   </div>
                 </div>
               </div>
             </div>
           </header>
-        </div>
-        <div className="skills">
+        </motion.div>
+        <motion.div
+          className="skills"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 1,
+              },
+            },
+          }}
+        >
           <div className="row py-2">
             <div className="col-md-4">
               <div className="card bg-light">
@@ -123,18 +181,50 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="portfolio">
+        </motion.div>
+
+        <motion.div
+          className="portfolio"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0.5,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 2,
+              },
+            },
+          }}
+        >
           <div className="row">
             <div className="col-md-12">
               <div className="card card-body bg-dark">
                 <div className="row">
                   <div className="col-md-12">
-                    <h1 className="text-center text-light">Proyectos</h1>
+                    <motion.h1
+                      className="text-center text-light"
+                      animate={{ rotate: 360 }}
+                      transition={{ duration: 2 }}
+                    >
+                      Algunos de mis proyectos
+                    </motion.h1>
                   </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
-                      <div className="overflow">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.4,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
                         <Image
                           src="/fire.png"
                           alt=""
@@ -142,9 +232,12 @@ export default function Home() {
                           height={400}
                           className="card-img-top"
                         />
-                      </div>
+                      </motion.div>
+
                       <div className="card-body">
-                        <h3 className="text-center text-primary">Firechat</h3>
+                        <motion.h3 className="text-center text-primary">
+                          Firechat
+                        </motion.h3>
                         <p className="text-center">
                           Se trata de una aplicación para conocer personas. Está
                           desarrollada con HTML, CSS, JS, React Js, React Native
@@ -153,20 +246,30 @@ export default function Home() {
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
-                            <a
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://github.com/Leon2192/Firechat-ProyectoFinalReactNative-Arrieta-Leonardo"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://expo.dev/@leonardoarrieta/firechat?serviceType=classic&distribution=expo-go"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
-                            </a>
+                            </motion.a>
                           </div>
                         </div>
                       </div>
@@ -174,15 +277,23 @@ export default function Home() {
                   </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
-                      <div className="overflow">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.1,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
                         <Image
-                          src="/recreologo.jpg"
+                          src="/recreologo.png"
                           width={400}
                           height={400}
                           alt=""
                           className="card-img-top"
                         />
-                      </div>
+                      </motion.div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
                           El Recreologo
@@ -195,20 +306,30 @@ export default function Home() {
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
-                            <a
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://github.com/Leon2192/El-Recreo-logo"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://el-recreologo.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
-                            </a>
+                            </motion.a>
                           </div>
                         </div>
                       </div>
@@ -216,7 +337,15 @@ export default function Home() {
                   </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
-                      <div className="overflow">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.2,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
                         <Image
                           src="/store.png"
                           alt=""
@@ -224,7 +353,7 @@ export default function Home() {
                           height={400}
                           className="card-img-top"
                         />
-                      </div>
+                      </motion.div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
                           Fake Store Api
@@ -237,20 +366,30 @@ export default function Home() {
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
-                            <a
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://github.com/Leon2192/ProyectoFinalReact-Arrieta-Leonardo-Manuel"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://fakestoreapi-tienda-online.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
-                            </a>
+                            </motion.a>
                           </div>
                         </div>
                       </div>
@@ -258,7 +397,15 @@ export default function Home() {
                   </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
-                      <div className="overflow">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.2,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
                         <Image
                           src="/unsplash.png"
                           width={400}
@@ -266,7 +413,7 @@ export default function Home() {
                           alt=""
                           className="card-img-top"
                         />
-                      </div>
+                      </motion.div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
                           ApiUnsplash
@@ -280,20 +427,30 @@ export default function Home() {
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
-                            <a
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://github.com/Leon2192/Buscador-Imagenes-Api"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://fakeunsplash.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
-                            </a>
+                            </motion.a>
                           </div>
                         </div>
                       </div>
@@ -301,7 +458,15 @@ export default function Home() {
                   </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
-                      <div className="overflow">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.1,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
                         <Image
                           src="/cinema.jpg"
                           width={400}
@@ -309,7 +474,7 @@ export default function Home() {
                           alt=""
                           className="card-img-top"
                         />
-                      </div>
+                      </motion.div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
                           React Cinema
@@ -322,20 +487,30 @@ export default function Home() {
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
-                            <a
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://github.com/Leon2192/ReactCinema"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://reactcinema-app.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
-                            </a>
+                            </motion.a>
                           </div>
                         </div>
                       </div>
@@ -343,7 +518,15 @@ export default function Home() {
                   </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
-                      <div className="overflow">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.1,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
                         <Image
                           src="/poke.png"
                           alt=""
@@ -351,7 +534,7 @@ export default function Home() {
                           height={400}
                           className="card-img-top"
                         />
-                      </div>
+                      </motion.div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
                           PokeApi Card
@@ -364,20 +547,30 @@ export default function Home() {
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
-                            <a
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://github.com/Leon2192/CardJS-HTML-Css-Scss-PokeApi"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaCode size="35" color="#db4a39" />
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
                               href="https://pokeapi-card-html-css-scss.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
                               <FaRocket size="35" color="#0e76a8" />
-                            </a>
+                            </motion.a>
                           </div>
                         </div>
                       </div>
@@ -387,7 +580,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </Layout>
     </>
   );

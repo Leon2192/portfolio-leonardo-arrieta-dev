@@ -7,6 +7,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -17,21 +18,7 @@ a {
   box-sizing: border-box;
 }
 
-.overflow{
-  height: 50%;
-  overflow: hidden;
-}
 
-.overflow .card-img-top{
-  transform: scale(1);
-  transition: all 0.2s ease-in-out;
-}
-
-.overflow .card-img-top:hover{
-  transform: scale(1.8);
-  background-color:#77dd77;
-  opacity: 0.7;
-}
 #nprogress .bar{
 background: #ff5367 !important;
 }
