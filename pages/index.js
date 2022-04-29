@@ -296,7 +296,7 @@ export default function Home() {
                           El Recreologo
                         </h3>
                         <p className="text-center">
-                          Se trata de un proyecto real para cliente brincado por
+                          Se trata de un proyecto real para cliente brindado por
                           CODERHOUSE, llamado el Recreólogo, producto de haberme
                           posicionado en el top 10 de la camada del curso de
                           REACT JS.
