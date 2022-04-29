@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Layout from "../../components/LayOut";
 
 import { FaGithubSquare } from "react-icons/fa";

@@ -24,7 +24,13 @@ const Nbar = () => {
           },
         }}
       >
-        <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky="top">
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          bg="primary"
+          variant="dark"
+          sticky="top"
+        >
           <Container>
             <Navbar.Brand href="/">
               <h1> {`< LEONARDO MANUEL ARRIETA / >`}</h1>

@@ -1,15 +1,12 @@
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import Layout from "../components/LayOut";
 import { skills } from "../profile";
-import { motion, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { FaCode } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa";
 import Image from "next/image";
 
 export default function Home() {
-  const { scrollYProgress } = useViewportScroll();
   return (
     <>
       <Layout>

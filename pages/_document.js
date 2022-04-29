@@ -29,7 +29,6 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css"
           />
-          <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
         </Head>
         <body>
           <Main />
