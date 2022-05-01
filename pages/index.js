@@ -344,6 +344,66 @@ export default function Home() {
                         }}
                       >
                         <Image
+                          src="/mlogo.png"
+                          width={400}
+                          height={400}
+                          alt=""
+                          className="card-img-top"
+                        />
+                      </motion.div>
+                      <div className="card-body">
+                        <h3 className="text-center text-primary">
+                          Mercado Libre Clon
+                        </h3>
+                        <p className="text-center">
+                          Esta aplicación es un maquetado de la UI del sitio
+                          oficial de Mercado Libre, utiliza React JS y Styled
+                          Components. Para detectar los estilos utilizo la
+                          extensión de Chrome "Css Pepper".
+                        </p>
+                        <div className="container-contact">
+                          <div className="contact-links">
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://github.com/Leon2192/MercadoLibre-Clone-Product-Section"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaCode size="35" color="#db4a39" />
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://mercadolibre-clone-section-product.netlify.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaRocket size="35" color="#0e76a8" />
+                            </motion.a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4 p-4">
+                    <div className="card h-100">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.2,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
+                        <Image
                           src="/store.png"
                           alt=""
                           width={400}
@@ -392,67 +452,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4 p-4">
-                    <div className="card h-100">
-                      <motion.div
-                        className="overflow"
-                        whileHover={{
-                          scale: 1.2,
-                          transition: {
-                            duration: 0.2,
-                          },
-                        }}
-                      >
-                        <Image
-                          src="/unsplash.png"
-                          width={400}
-                          height={400}
-                          alt=""
-                          className="card-img-top"
-                        />
-                      </motion.div>
-                      <div className="card-body">
-                        <h3 className="text-center text-primary">
-                          ApiUnsplash
-                        </h3>
-                        <p className="text-center">
-                          {" "}
-                          Aplicación creada con la herramienta para
-                          desarrolladores de Unsplash, que permite conectar con
-                          su API. Utiliza HTML, CSS, JS React JS y React Router
-                          Dom.
-                        </p>
-                        <div className="container-contact">
-                          <div className="contact-links">
-                            <motion.a
-                              whileHover={{
-                                scale: 2,
-                                transition: { duration: 0.2 },
-                              }}
-                              whileTap={{ scale: 0.5 }}
-                              href="https://github.com/Leon2192/Buscador-Imagenes-Api"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FaCode size="35" color="#db4a39" />
-                            </motion.a>
-                            <motion.a
-                              whileHover={{
-                                scale: 2,
-                                transition: { duration: 0.2 },
-                              }}
-                              whileTap={{ scale: 0.5 }}
-                              href="https://fakeunsplash.netlify.app/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FaRocket size="35" color="#0e76a8" />
-                            </motion.a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <motion.div
