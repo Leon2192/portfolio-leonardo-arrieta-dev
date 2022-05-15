@@ -465,7 +465,7 @@ export default function Home() {
                         }}
                       >
                         <Image
-                          src="/cinema.jpg"
+                          src="/netflixlogo.png"
                           width={400}
                           height={400}
                           alt=""
@@ -474,13 +474,13 @@ export default function Home() {
                       </motion.div>
                       <div className="card-body">
                         <h3 className="text-center text-primary">
-                          React Cinema
+                          Netflix Clone
                         </h3>
                         <p className="text-center">
-                          Aplicación desarrollada con HTML, CSS, JS y React Js.
-                          Funciona conectada con una api, la cual trae mediante
-                          un buscador las películas que hacen match con la
-                          búsqueda.
+                          Esta app está desarrollada con HTML, CSS, Javascript,
+                          React Js, Redux, Styled Components, Axios y Firebase.
+                          Conexión con API TMDB. Está basada en la UI de Netflix
+                          oficial.
                         </p>
                         <div className="container-contact">
                           <div className="contact-links">
@@ -490,7 +490,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://github.com/Leon2192/ReactCinema"
+                              href="https://github.com/Leon2192/Netflix-Clone"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -502,7 +502,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://reactcinema-app.netlify.app/"
+                              href="https://clone-netflix-stream.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
