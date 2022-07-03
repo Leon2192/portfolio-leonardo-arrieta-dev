@@ -211,6 +211,67 @@ export default function Home() {
                       Algunos de mis proyectos
                     </motion.h1>
                   </div>
+
+                  <div className="col-md-4 p-4">
+                    <div className="card h-100">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.1,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
+                        <Image
+                          src="/clima.png"
+                          alt=""
+                          width={400}
+                          height={400}
+                          className="card-img-top"
+                        />
+                      </motion.div>
+                      <div className="card-body">
+                        <h3 className="text-center text-primary">
+                          MeetApp - Weather API
+                        </h3>
+                        <p className="text-center">
+                          Esta App está desarrollada con React Js, permite
+                          calcular la cantidad de packs de cervezas que
+                          necesitaremos para una meetupp en base al clima que
+                          hace en la fecha y ciudad estipulada.
+                        </p>
+                        <div className="container-contact">
+                          <div className="contact-links">
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://github.com/Leon2192/Meetups-App"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaCode size="35" color="#db4a39" />
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://meetapp-accuweather.netlify.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaRocket size="35" color="#0e76a8" />
+                            </motion.a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div className="col-md-4 p-4">
                     <div className="card h-100">
                       <motion.div
@@ -382,66 +443,6 @@ export default function Home() {
                               }}
                               whileTap={{ scale: 0.5 }}
                               href="https://mercadolibre-clone-section-product.netlify.app/"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FaRocket size="35" color="#0e76a8" />
-                            </motion.a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4 p-4">
-                    <div className="card h-100">
-                      <motion.div
-                        className="overflow"
-                        whileHover={{
-                          scale: 1.2,
-                          transition: {
-                            duration: 0.2,
-                          },
-                        }}
-                      >
-                        <Image
-                          src="/store.png"
-                          alt=""
-                          width={400}
-                          height={400}
-                          className="card-img-top"
-                        />
-                      </motion.div>
-                      <div className="card-body">
-                        <h3 className="text-center text-primary">
-                          Fake Store Api
-                        </h3>
-                        <p className="text-center">
-                          Se trata de una tienda online, desarrollada con HTML,
-                          CSS, Javascript y React JS. Utiliza hooks, como
-                          dependencias React Router Dom, firebase y comunicación
-                          con Api llamada Fake Store Api.
-                        </p>
-                        <div className="container-contact">
-                          <div className="contact-links">
-                            <motion.a
-                              whileHover={{
-                                scale: 2,
-                                transition: { duration: 0.2 },
-                              }}
-                              whileTap={{ scale: 0.5 }}
-                              href="https://github.com/Leon2192/ProyectoFinalReact-Arrieta-Leonardo-Manuel"
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              <FaCode size="35" color="#db4a39" />
-                            </motion.a>
-                            <motion.a
-                              whileHover={{
-                                scale: 2,
-                                transition: { duration: 0.2 },
-                              }}
-                              whileTap={{ scale: 0.5 }}
-                              href="https://fakestoreapi-tienda-online.netlify.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
