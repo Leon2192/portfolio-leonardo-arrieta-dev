@@ -212,7 +212,7 @@ export default function Home() {
                     </motion.h1>
                   </div>
 
-                  <div className="col-md-4 p-4">
+                  <div className="col-md-3 p-3">
                     <div className="card h-100">
                       <motion.div
                         className="overflow"
@@ -226,8 +226,8 @@ export default function Home() {
                         <Image
                           src="/clima.png"
                           alt=""
-                          width={400}
-                          height={400}
+                          width={300}
+                          height={300}
                           className="card-img-top"
                         />
                       </motion.div>
@@ -261,7 +261,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://meetapp-accuweather.netlify.app/"
+                              href="https://meetups-app-six.vercel.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -272,7 +272,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4 p-4">
+                  <div className="col-md-3 p-3">
                     <div className="card h-100">
                       <motion.div
                         className="overflow"
@@ -286,8 +286,8 @@ export default function Home() {
                         <Image
                           src="/fire.png"
                           alt=""
-                          width={400}
-                          height={400}
+                          width={300}
+                          height={300}
                           className="card-img-top"
                         />
                       </motion.div>
@@ -333,7 +333,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4 p-4">
+                  <div className="col-md-3 p-3">
                     <div className="card h-100">
                       <motion.div
                         className="overflow"
@@ -346,8 +346,8 @@ export default function Home() {
                       >
                         <Image
                           src="/recreologo.png"
-                          width={400}
-                          height={400}
+                          width={300}
+                          height={300}
                           alt=""
                           className="card-img-top"
                         />
@@ -382,7 +382,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://el-recreologo.netlify.app/"
+                              href="https://el-recreo-logo.vercel.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -393,7 +393,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4 p-4">
+                  <div className="col-md-3 p-3">
                     <div className="card h-100">
                       <motion.div
                         className="overflow"
@@ -406,8 +406,8 @@ export default function Home() {
                       >
                         <Image
                           src="/mlogo.png"
-                          width={400}
-                          height={400}
+                          width={300}
+                          height={300}
                           alt=""
                           className="card-img-top"
                         />
@@ -442,7 +442,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://mercadolibre-clone-section-product.netlify.app/"
+                              href="https://mercado-libre-clone-product-section.vercel.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -454,7 +454,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-md-4 p-4">
+                  <div className="col-md-3 p-3">
                     <div className="card h-100">
                       <motion.div
                         className="overflow"
@@ -467,8 +467,8 @@ export default function Home() {
                       >
                         <Image
                           src="/netflixlogo.png"
-                          width={400}
-                          height={400}
+                          width={300}
+                          height={300}
                           alt=""
                           className="card-img-top"
                         />
@@ -503,7 +503,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://clone-netflix-stream.netlify.app/"
+                              href="https://netflix-clone-wine-seven.vercel.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
@@ -514,7 +514,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4 p-4">
+                  <div className="col-md-3 p-3">
                     <div className="card h-100">
                       <motion.div
                         className="overflow"
@@ -528,8 +528,8 @@ export default function Home() {
                         <Image
                           src="/poke.png"
                           alt=""
-                          width={400}
-                          height={400}
+                          width={300}
+                          height={300}
                           className="card-img-top"
                         />
                       </motion.div>
@@ -563,7 +563,126 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://pokeapi-card-html-css-scss.netlify.app/"
+                              href="https://card-js-html-css-scss-poke-api.vercel.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaRocket size="35" color="#0e76a8" />
+                            </motion.a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 p-3">
+                    <div className="card h-100">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.1,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
+                        <Image
+                          src="/store.png"
+                          alt=""
+                          width={300}
+                          height={300}
+                          className="card-img-top"
+                        />
+                      </motion.div>
+                      <div className="card-body">
+                        <h3 className="text-center text-primary">
+                          React Store
+                        </h3>
+                        <p className="text-center">
+                          Store con carrito de compras desarrollada con React
+                          Js. Utiliza además las tecnologías HTML, css, MUI
+                          design y Node js. Conecta con api para llamar a la
+                          información de los productos a mostrar.
+                        </p>
+                        <div className="container-contact">
+                          <div className="contact-links">
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://github.com/Leon2192/react-comision37745"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaCode size="35" color="#db4a39" />
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://store-react-beta.vercel.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaRocket size="35" color="#0e76a8" />
+                            </motion.a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-3 p-3">
+                    <div className="card h-100">
+                      <motion.div
+                        className="overflow"
+                        whileHover={{
+                          scale: 1.1,
+                          transition: {
+                            duration: 0.2,
+                          },
+                        }}
+                      >
+                        <Image
+                          src="/users.png"
+                          alt=""
+                          width={300}
+                          height={300}
+                          className="card-img-top"
+                        />
+                      </motion.div>
+                      <div className="card-body">
+                        <h3 className="text-center text-primary">
+                          Gestor de ususarios
+                        </h3>
+                        <p className="text-center">
+                          Aplicación sencilla que permite generar usuarios y
+                          almacenar su información y mostrarla en pantalla.
+                          Utiliza HTML, Css, Javascript y React Js.
+                        </p>
+                        <div className="container-contact">
+                          <div className="contact-links">
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://github.com/Leon2192/AppGestorDeUsers"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FaCode size="35" color="#db4a39" />
+                            </motion.a>
+                            <motion.a
+                              whileHover={{
+                                scale: 2,
+                                transition: { duration: 0.2 },
+                              }}
+                              whileTap={{ scale: 0.5 }}
+                              href="https://app-gestor-de-users.vercel.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
