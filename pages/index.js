@@ -503,7 +503,7 @@ export default function Home() {
                                 transition: { duration: 0.2 },
                               }}
                               whileTap={{ scale: 0.5 }}
-                              href="https://netflix-clone-wine-seven.vercel.app/"
+                              href="https://netflix-clon-tawny.vercel.app/"
                               target="_blank"
                               rel="noreferrer"
                             >
